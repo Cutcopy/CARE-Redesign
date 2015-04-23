@@ -1,3 +1,20 @@
 body
-    background-color #f4f4f4
+  font-family "Cabin", Helvetica, Arial, sans-serif
+  background-color white
+a
+    color $link-primary
+    
+.btn-primary
+  border 2px solid #5f89a9
+  border-radius 12px
+  background-image -moz-linear-gradient( 90deg, rgb(2,37,104) 0%, rgb(0,91,158) 100%)
+  background-image -webkit-linear-gradient( 90deg, rgb(2,37,104) 0%, rgb(0,91,158) 100%)
+  background-image -ms-linear-gradient( 90deg, rgb(2,37,104) 0%, rgb(0,91,158) 100%)
+  background-color #022A6D
+  &:hover
+      background-image linear-gradient(to top, #007cc0 0%, #0f71b9 100%)
+      background-color #0479BF
+  &:active
+      background linear-gradient(to bottom, #113e62 0%, #122549 100%)
+ 
     
