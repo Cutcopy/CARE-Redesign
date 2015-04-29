@@ -4,8 +4,12 @@
 footer
     color white
     
+.contact-us
+    margin-bottom 1em
+
 .footer-contact-form
     input, textarea
+        color $brand-neutral
         display block
         width 80%
         padding 0.87em
@@ -13,8 +17,10 @@ footer
         border-radius 6px
         box-shadow inset 2.5px 4.33px 0px 0px rgba(0, 0, 0, 0.58)
     textarea
-        padding-bottom 3em
+        padding-bottom 8em
     input[type="submit"]
         //width 40%
         box-shadow none
-        float right
+@media (min-width: 768px)
+        .col-sm-offset-6
+            margin-left 53%
