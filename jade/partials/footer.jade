@@ -17,8 +17,16 @@
                     p  &copy; The Career Academy of Real Estate. All Rights Reserved.
                     p School Certified by Alabama REal Estate Commission. <br>Shool Number 087762
                 .col-md-6
-                    form(class="contact-form")
-                        input(type="name")
-                        input(type="email")
-                        textarea
-                        input(type="submit")
+                    form(class="footer-contact-form")
+                        .row
+                            .col-sm-12
+                                input(type="name", placeholder="Name")
+                        .row
+                            .col-sm-12
+                                input(type="email", placeholder="Email")
+                        .row
+                            .col-sm-12
+                                textarea(placeholder="Message")
+                        .row
+                            .col-sm-4.col-sm-offset-6
+                                input(class="btn btn-primary btn-lg btn-right" type="submit" value="submit")
