@@ -1,12 +1,27 @@
-doctype
+Doctype 
 html
   include ./partials/head.jade
   body
       include ./partials/nav.jade
       include ./partials/hero.jade
       .container
-          .row
-              p I'm an awesome paragraph       
+          section.row.sales-pitch
+              .row
+                  .col-md-12
+                      h2 Have the Future You've Always Wanted!
+              .row
+                  .col-md-3
+                      img(src="/img/pro_on_phone.jpg")
+                  .col-md-9
+                      p If you've ever thought of going into the exciting, fast-paced world of real estate, now is the perfect time! Learn everything you need to know from us over the Internet to pass the real estate exam!
+                  
+                      p At Career Academy of Real Estate , we provide online self-paced learning to prepare you for the real estate license test. We are here to answer questions, keep you on track and motivated, and get you the professional and comprehensive training you need and deserve!
+                      p Get more information here about our 
+                          a(href="#") Alabama Online Real Estate Classes.
+                      p The Career Academy of Real Estate believes in being the best at what we do, so you can be the best at what you do. In fact, all of our courses are approved by not only the Alabama Real Estate Commission, but also 
+                          a(href="#") ARELLO! 
+                      p The Career Academy is the only name you need to know for education and preparation for the real estate business!
+                     
       include ./partials/footer.jade
       include ./partials/foot.jade
 
