@@ -1,11 +1,18 @@
+//dependencies
 @import "../css/font-awesome.min.css"
 @import "/bootstrap-stylus/bootstrap/index.styl"
 @import "/bootstrap-stylus/bootstrap/theme.styl"
-@import "/partials/variables.styl"
-@import "/partials/mixins.styl"
-@import "/partials/body.styl"
-@import "/partials/hero.styl"
-@import "/partials/footer.styl"
-@import "/partials/nav.styl"
-@import "/partials/type.styl" 
-@import "/partials/sections.styl"
+
+//variables and mixins
+@import "c_variables"
+@import "c_mixins"
+
+//core styles
+@import "body"
+@import "type"
+
+//individual styles
+@import "hero"
+@import "footer"
+@import "nav"
+@import "sections"
