@@ -1,1 +1,5 @@
-console.log("saving the day");
+
+$('#salesperson a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})
