@@ -1,3 +1,4 @@
+//Course tab functions
 $(document).ready(fuction(){
     $('#salesperson-tab a:first').click(function (e) {
         e.preventDefault()

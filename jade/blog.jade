@@ -7,11 +7,72 @@ html
       include ./partials/nav.jade
       section.container-fluid.blog
           .jumbotron
-              img(src="img/Hero-Logo.png", alt="Career Academy Of Real Estate" title="Career Academy of Real Estate")
+              .container
+                  img(src="img/Hero-Logo.png", alt="Career Academy Of Real Estate" title="Career Academy of Real Estate" class="blog-hero-logo")
       section.container
-        .col-sm-12
+        .col-md-8
+            .row.blog-post
+                .post-wrap
+                    header.page-header
+                        h1.blog-title Article Title
+                        date.post-meta January 1st, 2015
+                        ul.share-media
+                            li
+                                a(href="")
+                                    i.fa.fa-facebook
+                            li
+                                a(href="https://twitter.com/share")
+                                    i.fa.fa-twitter
+                            li
+                                a(href="")
+                                    i.fa.fa-google-plus
+                            li
+                                a(href="")
+                                    i.fa.fa-envelope
+                    article.blog-body
+                        .embed-responsive.embed-responsive-16by9.video-content
+                            | <iframe class="embed-responsive-item" width="502" height="282" src="https://www.youtube.com/embed/1KjRoOR6TtU" frameborder="0" allowfullscreen></iframe>  
+                            
+                        p  We help people begin a career in real estate and assist throughout their career from prelicense, continuing education, post license, reciprocal licensing, broker courses as licensees continue their professional development as well as software training. Feel free to call us at 1-800-481-3116 or email us at DPalmer@CareerAcademyOfRealEstate.com 
+
+                        p For those of you who are members of the National Association of Realtors, you should be aware of programs they offer called National Broker Summits. There will be three this year, with two on the West Coast and one on the East Coast. Fraser attended one last year and found it to be an informative presentation that allows agents to get information from brokers from across the country. We highly encourage you to go on the NAR website and investigate it, especially if you are an owner, manager, or broker. These kinds of events are a fantastic way to broaden your perspective of the industry. 
+
+                        p Now, we want to discuss what people are looking for in today's market. One of the most important things buyers are looking for in markets across the country is location. Here are some attributes that make a property's location desirable:
+
+                        ul
+                            li Quality of the neighborhood
+                            li Convenient for job
+                            li Overall affordability of homes
+                            li Convenient for friends and family
+                            li Convenient for shopping
+                            li Quality of school district
+                            li Design of neighborhood
+
+                        p Nearly 70% of buyers feel that commuting costs are either very important or somewhat important as far as the location of their home relative to their workplace is concerned. Additionally, environmentally friendly homes are also starting to be more important to buyers, which is a very recent shift. 
+
+                        p Often, when people look at homes, choosing the right one comes down to the process of elimination. They start with a list of needs and prioritize them. As they look at homes, preferences that are of lower priority are eliminated from the list. However, roughly 30% of repeat buyers stick to their guns - they only want a home that meets all of their specifications. 
+
+                        p Despite the abundance of online real estate resources, 88% of buyers purchase their home through a real estate agent or broker. They appreciate the help they get finding the right home, they benefit from a greater understanding of the process, and they place a high importance on integrity and honesty. Additionally, 88% of sellers are also assisted by an agent, who they turn to for marketing help, selling quickly, pricing the home competitively, and providing service with integrity. In other words, agents still play an indispensable role in real estate transactions.
+
+                        p If you're considering getting into the real estate business, you need to make yourself familiar with these trends. Having a complete understanding of how buyers and sellers think is the foundation to a successful career. Being informed about market trends will give you the ability to help buyers and sellers accomplish their real estate goals, and they will in turn refer you to family, friends, and acquaintances. 
+
+                        p If you would like more tips and helpful information to help you reach the next level in the industry, give us a call or shoot us a quick email. We would love to help you take your production to the next level!
+                        
             .row
-                article
-                    h1
+                nav
+                    ul.pagination
+                        li
+                            a(href="#" aria-label="Previous")
+                                span(aria-hidden="true") &laquo;
+                        li
+                            a(href="#") 1
+                        li
+                            a(href="#") 2
+                        li
+                            a(href="#") 3
+                        li
+                            a(href="#" aria-label="Next")
+                                span(aria-hidden="true") &raquo;
+                    
     include ./partials/footer.jade
     include ./partials/foot.jade
