@@ -12,93 +12,23 @@ html
         section.container
             .row 
                 .col-md-8.courses-tabs
-                    ul(class="nav nav-tabs")
+                    ul(class="nav nav-tabs" role="tablist")
                        li(role="presentation" class="active")
-                           a(href="#Salesperson") Salesperson
+                           a(href="#Salesperson" id="salesperson-tab" aria-controls="salesperson" role="tab" data-toggle="tab") Salesperson
                        li(role="presentation")
-                           a(href="#Reciprocal") Reciprocal
+                           a(href="#Reciprocal" id="reciprocal-tab" aria-controls="Reciprocal" role="tab" data-toggle="tab") Reciprocal
                        li(role="presentation")
-                           a(href="#Broker") Broker
+                           a(href="#Broker" id="broker-tab" aria-controls="Broker" role="tab" data-toggle="tab") Broker
                        li(role="presentation")
-                           a(href="#Post") Post
+                           a(href="#Post" id="post-tab" aria-controls="Post" role="tab" data-toggle="tab") Post
                        li(role="presentation")
-                           a(href="#Continuing") Continuing Education
+                           a(href="#Continuing" id="continuing-tab" aria-controls="Continuing Education" role="tab" data-toggle="tab") Continuing Education
                     .row
-                        .col-md-8.col-md-offset-2.course-info
-                            mixin register
-                                a(href="#" class="btn btn-primary btn-large register") Register Now 
-                                
-                            #Salesperson
-                               h2 Salesperson License - Only $295
-                               p A career in Real Estate is one that can be rewarding but also challenging. You may have wondered, How do I get started in real or How do I find the best realtor course?
-
-                               p The Career Academy of Real Estate can help you get started in real estate as well as guide you through each step. If you are ready to learn how to get a real estate license, simply review the requirements from the Alabama Real Estate                         Commission to make sure you are eligible, then complete the registration form! Now let's get started!
-
-                               p registered you can access the self-paced sessions at any time by going <a href="http://www.careeracademyofrealestate.com>/a>. Enter your email address and the password you established when registering where it says, New and Returning Student Login.
-
-                               p Our students love the flexibility this course offers. We work hard to make it easy for you!
-
-                               p You have six months to complete the course and take a final exam. If you need longer than six months,                     you can purchase two 3-month extensions at a cost of $50 per extension! After you pass your final exam with a 80% or better, your next step is to pass the state exam and then you are on your way to fulfilling your dream!!!
-
-                              p During your coursework, you will want to interview with different brokers to decide where you will                       want to place your temporary license once you have passed your state exam. Visit our blog for an article on how to choose a broker. 
-                              br
-                              +register                                    
-                            
-                            #Reciprocal
-                                h2 Reciprocal License
-                                div Broker License - $100
-                                div Salesperson License - $100
-                                strong  What are the qualifications to obtain a reciprocal license in Alabama?
-                                ol
-                                    li Hold a current license on either active or inactive status in the state where you took prelicense course work.
-                                    li Have taken the entire exam that is called for to be licensed in your qualifying state.
-                                    li Obtain a certification of licensure (license history) from your qualifying state and any other state(s) where you hold or have held a license within the past 5 years.
-                                    li Complete the appropriate 6 hours of Alabama law in either the salesperson or broker prelicense course.
-                                    li Pass the Alabama law portion of Alabama’s salesperson or broker licensing exam.
-                                p While taking the 6-hour course on Alabama license law, applicants for a reciprocal license should request an evaluation of their license status from their qualifying state. This link will take you to a Request Form that you can send to your qualifying state for the verification information required by the Alabama Real Estate Commission. 
-                                p <strong>This form, along with certification(s) of licensure</strong> from your qualifying state plus any other states in which you have been licensed within the past 5 years, may be faxed or mailed to the Commission. You may also scan in your certifications of licensure and email them to the Commission along with a request for determination of reciprocal licensing exam eligibility. 
-                                div
-                                    a(href="http://www.arec.alabama.gov/" target="blank") Alabama Real Estate Commission
-                                    br 
-                                    address 1201 Carmichael Way <br> Montgomery, Alabama 36106 <br>
-                                    span 334.242.5544 Phone<br>
-                                    span 334.270.9118 Fax
+                        .col-md-8.tab-content                                
+                            include ./partials/salesperson.jade                             
+                            include ./partials/reciprocal.jade
+                            include ./partials/post.jade
+                            include ./partials/continue.jade
                                     
-                                p When you complete the course your completion information will be transmitted to the testing agency, <a href="http://www.goamp.com/" target="_blank">Applied Measurement Professionals</a> (AMP). As soon as AMP processes your information you will receive an email from AMP indicating that you can schedule an appointment for the Alabama license law portion of the state exam.
-                                
-                                +register
-                                
-                        #Broker
-                            h2 Broker License - $295
-                            p Are you ready for the next step in your real estate profession? Have you found a career you can call home? If so, becoming a Real Estate broker could be the next rewarding step for you! The Career Academy of Real Estate's broker course consists of thorough, self-paced sessions you can access online.
-                            p To obtain a real estate Broker license in Alabama, an applicant who does not already hold a current real estate broker license in another state must:
-                            ul
-                                li Take the Alabama broker prelicense course
-                                li Pass the Alabama state broker licensing exam
-                            p <em>(To be eligible to take this course you must have held an active real estate salesperson license in any state for at least 24 months of the 36 month period immediately preceding the date of application. If you do not hold a salesperson's license in any state then you must first take the salesperson's course and work as a salesperson for 24 of the next 36 months before you can take the Broker's course and apply for a Broker's license)</em>
-                            p After completing all of the online sessions, you will have a one-on-one telephone appointment with the instructor to discuss further preparations for the state exam.
-                            +register
-                    
-                    #Post
-                        h2 Post License Course - $195
-                        
-                        p Congratulations! You’ve passed your State salesperson exam! Now what???
-                        p The good news is you have 90 days to decide what you would like to do! The next phase of your Real Estate Education is known as Post Licensing.   
-                        p Once you’ve decided whether you want to be active or inactive status, you apply with the Alabama Real Estate Commission to be issued a temporary license. Upon receiving your license, you can do the following:    
-                        p If you are ready to work in real estate right now, out of the brokers you interviewed, choose the one who is right for you and who will now hold your temporary license so you can begin your career! If you have not yet interviewed brokers Visit our blog to read an article on how to choose a broker.
-                        p If you feel you want to wait to begin your real estate career, you can place your license on inactive status and the Commission will hold the temp license until you are ready to begin working! You have 6 months with an active license and 12 months with an inactive license to complete a 30- hour post licensing course.
-                        p This is a comprehensive, self-paced training. In the prelicense course you learned principles and concepts about real estate. The post license course is more practical information. In post licensing you learn how to practice real estate. You can access recorded sessions which are delivered to you over the Internet! After completing the course, you must pass an exam with a 70% or better. You are on your way to the life you’ve always imagined!
-                        +register
-                    
-                    #Continuing
-                        h2 Continuing Education
-                        p Register below to take CE delivered to your computer as streaming video. The courses are on the Internet so you can take them anytime, anywhere from any computer. After registering you will be given instructions as to how to access the self-paced modules.
-
-                        p All licensees are required to take fifteen (15) hours of continuing education every two (2) years in order to renew a license. Of these (15) hours, six (6) hours must be two (2) new risk management courses. All other courses are electives.
-
-                        p All licensees must have both a Risk Management Level 1 and a Risk Management Level 2 in their CE record in order to activate a 2013-2014 license for the first time or earn credit to renew a 2015-2016 license.
-                        
-                        
-                        
     include ./partials/footer.jade
     include ./partials/foot.jade
