@@ -2,7 +2,7 @@
     padding 0px
 .container-fluid
     .jumbotron
-        background-image url("../img/hero.jpg")
+        background-image url("/img/hero.jpg")
         background-size cover
         background-position center center
 
@@ -19,6 +19,9 @@
         background url('../img/keyboard.jpg')
         background-size cover
         background-position center center
+        p
+            @media (min-width: @screen-sm-min)
+                font-size 1em
 
         
 // Courses Page
@@ -36,6 +39,7 @@
         background url('../img/chalk_board.jpg')
         background-size cover
         background-position top center
+        
 
 // Blog
 .blog
