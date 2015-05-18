@@ -15,4 +15,5 @@ $(document).ready(fuction(){
         e.preventDefault()
         $(this).tab('show')
     })
+    $('#salesperson-tab a[href="#Salesperson"]').tab('show')
 });
